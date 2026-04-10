@@ -3,76 +3,54 @@ import { NextResponse } from "next/server"
 export async function GET() {
   try {
     const resumeContent = `
-NIKITESH BHADADE
-Web UI Developer
-nikiteshb@gmail.com | 09561501506 | Pune, India
+PRIYANKA PRIYADARSINI BEHERA
+Full-Stack Developer
+beherapriyadarsini888@gmail.com | Pune, India
+LinkedIn: linkedin.com/in/priyanka-priyadarsini
+GitHub: github.com/Priyanka115-p
 
 SUMMARY
-Accomplished Sr. Software Engineer with a strong background at Globant India Pvt Ltd, focusing on React.js and JavaScript. Committed to delivering pixel-perfect UIs and advancing accessibility standards. Experienced in team leadership and driving innovative solutions, resulting in enhanced user experiences and compliance with contemporary web standards.
+Passionate Full-Stack Developer with 1+ year of experience building clean, responsive web applications.
+Skilled in turning ideas into deployed products using modern frontend and backend technologies.
+Strong focus on user experience, accessibility, and performance optimization.
 
 SKILLS
-Frontend: React.js, JavaScript, HTML5, CSS3
-Styling: SASS, LESS, Bootstrap 5, Tailwind CSS, MUI
-CMS & Tools: Drupal, Wordpress, Figma, InVision
-Design: Photoshop, Illustrator
-Standards: Responsive web design, ADA/WCAG 2.2 AA accessibility standards
-Version Control: Git
+Frontend : JavaScript, TypeScript, HTML5, CSS3, Tailwind CSS, Bootstrap 5, Material UI
+Backend  : Laravel, PHP, Python, Django, MySQL, MongoDB
+Tools    : Git, Figma, Postman, VS Code
+Standards: Web Accessibility, WCAG 2.2, Performance Optimization, Cross-browser Testing
 
 EXPERIENCE
 
-Sr. Software Engineer
-Globant India Pvt Ltd | 11/2020 – Present | Pune
-• Led UI/frontend team of 5 designers to develop interactive user interfaces using JavaScript, HTML5, CSS3, SASS, React, and Drupal
-• Delivered pixel-perfect UIs by converting PSD/Figma/InDesign designs into production web applications
-• Revamped legacy products to boost performance and ensured compliance with new web standards
-• Enhanced accessibility features/standards like WCAG 2.2 AA to meet current guidelines and improve user experience
+Full-Stack Developer
+1+ Year of Experience | Pune, India
+• Built and deployed full-stack web applications using Laravel (PHP) and Python (Django)
+• Designed pixel-perfect, responsive UIs with Tailwind CSS and Bootstrap 5
+• Developed RESTful APIs and integrated them with frontend applications
+• Managed relational databases (MySQL) and NoSQL databases (MongoDB)
+• Followed web accessibility principles (WCAG 2.2) to ensure inclusive user experiences
+• Used Git for version control and Figma for design collaboration
+• Optimized performance through efficient queries, lazy loading, and reusable components
 
-Sr. Web Designer
-Markets and Markets Research Pvt. Ltd | 05/2019 – 11/2020 | Pune
-• Created responsive web pages, integrating PSD designs to HTML and Angular 7
-• Designed UIs for dynamic email templates, enhancing user experience
-• Restyled UI components for improved appeal and usability; managed version control with Git
-
-Web Designer
-Yardi Software India Pvt. Ltd | 10/2017 – 05/2019 | Pune
-• Executed design process for dynamic/static email templates, integrating PSD to HTML/.NET framework
-• Redesigned products for modern standards and ADA compliance
-• Enhanced accessibility features/standards like WCAG 2.2 AA to meet current guidelines
-• Managed frontend UI for Angular 2; resolved page issues efficiently
-
-Web Designer
-Circl Design India Pvt. Ltd | 04/2017 – 09/2017 | Pune
-• Developed website projects using HTML, CSS, WordPress
-• Created responsive layouts with Bootstrap, dynamic functions with JavaScript/jQuery
-
-UI Engineer
-Sycamore Software Solutions Pvt. Ltd | 06/2015 – 03/2017 | Pune
-• Developed newsletters/web projects using HTML, CSS, WordPress, Bootstrap, and JavaScript/jQuery
-
-Web Graphics Designer
-Valency Realty Pvt. Ltd | 07/2014 – 05/2015 | Pune
-• Led a team in pre-sales activities, digital and print campaigns, SEO/SMO initiatives
-• Designed promotional graphics for campaigns and social media
+PROJECTS
+• Portfolio Website  — Next.js, Tailwind CSS, Framer Motion, Vercel deployment
+• Full-Stack Web App — Laravel, MySQL, Blade templating, REST API
+• Python Django App  — Django, Python, SQLite, responsive UI
 
 EDUCATION
-
-Master of Science in Computer Science
-K. R. Pandav College, Nagpur University | 2012 | Nagpur
-
-Bachelor of Computer Applications (BCA)
-G.H. Raisoni Institute of Information Technology, Nagpur University | 2007 – 2011 | Nagpur
+Bachelor of Technology (B.Tech) / Equivalent
+Pune, India
 
 LANGUAGES
-Marathi, Hindi, English
+Odia, Hindi, English
 
 INTERESTS
-Cricket, Photography, PC Games, Music
+Travel, Photography, Gaming
     `
 
-    // Create a simple text-based response that can be downloaded as a file
     const headers = new Headers()
     headers.set("Content-Type", "text/plain; charset=utf-8")
-    headers.set("Content-Disposition", 'attachment; filename="Nikitesh_Bhadade_Resume.txt"')
+    headers.set("Content-Disposition", 'attachment; filename="Priyanka_Priyadarsini_Resume.txt"')
 
     return new NextResponse(resumeContent, {
       status: 200,
