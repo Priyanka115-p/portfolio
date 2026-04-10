@@ -33,6 +33,24 @@ export default function WorkProcess() {
 
 
 
+  const expertise = [
+    {
+      icon: Code2,
+      title: "Frontend Development",
+      description: "React, Next.js, TypeScript, Tailwind CSS, SASS — building responsive and accessible UIs.",
+    },
+    {
+      icon: Zap,
+      title: "Backend Development",
+      description: "Laravel, PHP, MySQL, MongoDB — designing APIs and database schemas for scalable apps.",
+    },
+    {
+      icon: Users,
+      title: "Collaboration & Tools",
+      description: "Git, Figma, Postman, VS Code — working effectively in team environments and agile workflows.",
+    },
+  ]
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

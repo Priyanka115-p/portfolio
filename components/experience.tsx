@@ -33,7 +33,7 @@ export default function Experience() {
     "Worked closely with engineering and product teams to define data requirements",
     "Documented findings and communicated insights using charts and summaries"
   ],
-}
+},
 
     {
       title: "Python Developer Intern",

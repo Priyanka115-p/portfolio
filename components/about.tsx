@@ -88,6 +88,7 @@ export default function About() {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
              Whether it's designing pixel-perfect UI, structuring reusable components ,or building data-driven features on the <span className="font-semibold text-foreground"> backend</span>,  I enjoy solving problems and improving user experience.
+            </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Beyond code, I'm passionate about{" "}
               <span className="font-semibold text-foreground">Travel, photography, and gaming</span>. I believe in
