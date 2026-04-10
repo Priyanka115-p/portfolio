@@ -50,8 +50,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(0,240,255,0.3)",
-          background: "rgba(0,240,255,0.05)",
+          border: "1px solid rgba(124,58,237,0.3)",
+          background: "rgba(124,58,237,0.05)",
           transform: `translateZ(${size / 2}px)`,
           borderRadius: 4,
         }}
@@ -61,8 +61,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(59,130,246,0.3)",
-          background: "rgba(59,130,246,0.05)",
+          border: "1px solid rgba(168,85,247,0.3)",
+          background: "rgba(168,85,247,0.05)",
           transform: `translateZ(-${size / 2}px) rotateY(180deg)`,
           borderRadius: 4,
         }}
@@ -72,8 +72,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(139,92,246,0.3)",
-          background: "rgba(139,92,246,0.05)",
+          border: "1px solid rgba(192,132,252,0.3)",
+          background: "rgba(192,132,252,0.05)",
           transform: `translateX(-${size / 2}px) rotateY(-90deg)`,
           borderRadius: 4,
         }}
@@ -83,8 +83,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(0,240,255,0.3)",
-          background: "rgba(0,240,255,0.05)",
+          border: "1px solid rgba(124,58,237,0.3)",
+          background: "rgba(124,58,237,0.05)",
           transform: `translateX(${size / 2}px) rotateY(90deg)`,
           borderRadius: 4,
         }}
@@ -94,8 +94,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(59,130,246,0.2)",
-          background: "rgba(59,130,246,0.04)",
+          border: "1px solid rgba(168,85,247,0.2)",
+          background: "rgba(168,85,247,0.04)",
           transform: `translateY(-${size / 2}px) rotateX(90deg)`,
           borderRadius: 4,
         }}
@@ -105,8 +105,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(0,240,255,0.2)",
-          background: "rgba(0,240,255,0.04)",
+          border: "1px solid rgba(124,58,237,0.2)",
+          background: "rgba(124,58,237,0.04)",
           transform: `translateY(${size / 2}px) rotateX(-90deg)`,
           borderRadius: 4,
         }}
