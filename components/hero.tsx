@@ -50,8 +50,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(124,58,237,0.3)",
-          background: "rgba(124,58,237,0.05)",
+          border: "1px solid rgba(0,240,255,0.3)",
+          background: "rgba(0,240,255,0.05)",
           transform: `translateZ(${size / 2}px)`,
           borderRadius: 4,
         }}
@@ -61,8 +61,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(168,85,247,0.3)",
-          background: "rgba(168,85,247,0.05)",
+          border: "1px solid rgba(59,130,246,0.3)",
+          background: "rgba(59,130,246,0.05)",
           transform: `translateZ(-${size / 2}px) rotateY(180deg)`,
           borderRadius: 4,
         }}
@@ -72,8 +72,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(192,132,252,0.3)",
-          background: "rgba(192,132,252,0.05)",
+          border: "1px solid rgba(139,92,246,0.3)",
+          background: "rgba(139,92,246,0.05)",
           transform: `translateX(-${size / 2}px) rotateY(-90deg)`,
           borderRadius: 4,
         }}
@@ -83,8 +83,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(124,58,237,0.3)",
-          background: "rgba(124,58,237,0.05)",
+          border: "1px solid rgba(0,240,255,0.3)",
+          background: "rgba(0,240,255,0.05)",
           transform: `translateX(${size / 2}px) rotateY(90deg)`,
           borderRadius: 4,
         }}
@@ -94,8 +94,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(168,85,247,0.2)",
-          background: "rgba(168,85,247,0.04)",
+          border: "1px solid rgba(59,130,246,0.2)",
+          background: "rgba(59,130,246,0.04)",
           transform: `translateY(-${size / 2}px) rotateX(90deg)`,
           borderRadius: 4,
         }}
@@ -105,8 +105,8 @@ function Cube3D({ size = 40, className = "" }: { size?: number; className?: stri
         style={{
           position: "absolute",
           inset: 0,
-          border: "1px solid rgba(124,58,237,0.2)",
-          background: "rgba(124,58,237,0.04)",
+          border: "1px solid rgba(0,240,255,0.2)",
+          background: "rgba(0,240,255,0.04)",
           transform: `translateY(${size / 2}px) rotateX(-90deg)`,
           borderRadius: 4,
         }}
@@ -182,9 +182,9 @@ export default function Hero() {
 
             {/* Dot grid */}
             <div
-              className="absolute inset-0 opacity-[0.04] dark:opacity-[0.07]"
+              className="absolute inset-0 opacity-[0.04] dark:opacity-[0.1]"
               style={{
-                backgroundImage: `radial-gradient(circle, #7c3aed 1px, transparent 1px)`,
+                backgroundImage: `radial-gradient(circle, #00f0ff 1px, transparent 1px)`,
                 backgroundSize: "40px 40px",
               }}
             />
@@ -227,13 +227,13 @@ export default function Hero() {
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-bold leading-tight tracking-tight">
               <motion.span
                 className="block bg-gradient-to-br from-foreground via-primary to-accent bg-clip-text text-transparent glow-text"
-                style={prefersReducedMotion ? {} : { textShadow: "0 20px 40px rgba(124,58,237,0.25)" }}
+                style={prefersReducedMotion ? {} : { textShadow: "0 20px 40px rgba(0,240,255,0.25)" }}
               >
                 Priyanka
               </motion.span>
               <motion.span
                 className="block bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent"
-                style={prefersReducedMotion ? {} : { textShadow: "0 20px 60px rgba(168,85,247,0.3)" }}
+                style={prefersReducedMotion ? {} : { textShadow: "0 20px 60px rgba(59,130,246,0.3)" }}
               >
                 Priyadarsini
               </motion.span>
@@ -263,8 +263,8 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <motion.a
               href="#process"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary via-secondary to-accent text-white rounded-xl font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-              whileHover={prefersReducedMotion ? {} : { scale: 1.06, y: -4, boxShadow: "0 20px 40px rgba(124,58,237,0.4)" }}
+              className="btn-3d inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary via-secondary to-accent text-white rounded-xl font-semibold transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              whileHover={prefersReducedMotion ? {} : { scale: 1.06, y: -4, boxShadow: "0 20px 40px rgba(0,240,255,0.4)" }}
               whileTap={prefersReducedMotion ? {} : { scale: 0.97 }}
             >
               View My Work
@@ -273,7 +273,7 @@ export default function Hero() {
             <motion.a
               href="/api/resume"
               download="Priyanka_Behera_Resume.txt"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/40 rounded-xl font-semibold hover:bg-primary/10 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 backdrop-blur-sm"
+              className="btn-3d inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/40 rounded-xl font-semibold hover:bg-primary/10 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 backdrop-blur-sm"
               whileHover={prefersReducedMotion ? {} : { scale: 1.06, y: -4 }}
               whileTap={prefersReducedMotion ? {} : { scale: 0.97 }}
             >
@@ -285,9 +285,9 @@ export default function Hero() {
           {/* 3D Stat Cards */}
           <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 max-w-lg mx-auto">
             {[
-              { value: "1+", label: "Years Experience", icon: "⚡", color: "from-violet-500 to-purple-600" },
-              { value: "5+", label: "Projects", icon: "🚀", color: "from-purple-500 to-fuchsia-500" },
-              { value: "100%", label: "Passion", icon: "✨", color: "from-fuchsia-500 to-violet-500" },
+              { value: "1+", label: "Years Experience", icon: "⚡", color: "from-cyan-400 to-blue-600" },
+              { value: "5+", label: "Projects", icon: "🚀", color: "from-blue-500 to-violet-500" },
+              { value: "100%", label: "Passion", icon: "✨", color: "from-violet-500 to-cyan-400" },
             ].map((stat, idx) => (
               <Card3D key={idx} intensity={18} glare>
                 <div className="p-5 rounded-2xl bg-card/90 border border-border backdrop-blur-sm group transition-colors hover:border-primary/60 hover:bg-card">
